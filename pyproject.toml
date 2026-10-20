@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartsynch-dual-rc"
+version = "0.1.0"
+description = "Paper-aligned dual physical-reservoir synchronization for molecular channels"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "pandas>=2.1",
+    "matplotlib>=3.8",
+]
+
+[tool.setuptools.packages.find]
+include = ["smartsynch*"]
